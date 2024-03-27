@@ -13,10 +13,14 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
+
 
 const WritePage = () => {
   const { status } = useSession();
+  // Dynamically importing quill lib because react quill caues problem with next js server side rendering
+  const ReactQuill = dynamic(() => import ("react-quill"), {ssr: false});     
+
   const router = useRouter();
 
   const [open, setOpen] = useState(false);

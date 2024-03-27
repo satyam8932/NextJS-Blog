@@ -14,10 +14,10 @@ const Footer = () => {
         <p className={styles.desc}>
           Stay ahead of the curve with our tech and coding blog, your go-to
           destination for the latest industry trends, insightful tutorials, and
-          expert advice. Whether you're a seasoned developer or just starting
+          expert advice. Whether you&apos;re a seasoned developer or just starting
           your journey into the world of technology, our curated content will
           fuel your curiosity and inspire your next breakthrough. Join our
-          community of innovators and let's code the future together.
+          community of innovators and let&apos;s code the future together.
         </p>
         <div className={styles.icons}>
           <Image src="/facebook.png" alt="" width={18} height={18} />
